@@ -21,7 +21,7 @@ def sound(request):
 def aboutus(request):
 	return render(request, 'soundeffects/aboutindex.html')
 
-def sounds(request, sound_id):
+def sounds(request):
 	return render(request, 'soundeffects/sounds.html')
 
 def contact(request):
