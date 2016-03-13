@@ -1,0 +1,61 @@
+<html>
+	{% load staticfiles %}
+	<head> 
+		<title> Sitch </title>
+		<link rel="stylesheet" type="text/css" href="{% static 'soundeffects/CSS/style.css' %}">
+	</head>
+	<body> 
+
+		<div id= "main">
+
+			<div id= "logo">
+				<a href= "index.html">
+				<img src= "{% static 'soundeffects/images/Sitch_Logo.png' %}" width= "175" height= "175" class= "img-circle"> </a>
+			</div>
+
+			<div id= "navigation">
+
+				<li> <a class= "home" href="/">HOME</a> 
+				<span style='color:red;margin-right:4em; display:inline-block;'>&nbsp;</span></li>
+
+				<li> <a class= "home" href="/aboutus">ABOUT US</a> 
+				<span style='color:red;margin-right:6em; display:inline-block;'>&nbsp;</span></li>
+
+				<li> <a class= "home" href="/sounds">SOUNDS</a>
+				<span style='color:red;margin-right:2em; display:inline-block;'>&nbsp;</span></li>
+				
+				<li> <a class= "home" href="/contact">CONTACT US</a></li> 
+
+			</div>
+
+			<div id = "centerpic">
+				<p class = "Homepage_Text">I would like to hear...</p>
+			</div>
+
+			<div id = "search_form">
+				<form id="searchthis" action="/sound" style="display:inline;" method="get">
+					<input id="search-box" name="q" size="10" type="text" placeholder="Music / Jingles / Funny Sounds"/>
+					<input id="search-btn" type="submit" value="Search"/>
+				</form>
+			</div>
+
+			kjdabsdksabdjasb
+
+			{% sound %}
+
+			<!-- <audio src="{% sound %}">
+			</audio> -->
+
+		</div>
+
+		<div id="footer">
+			<div id="footerleft">
+				<p>&#169; Sitch. 2016</p>
+			</div>
+		</div>
+
+	</body>
+
+</html>
+
+
