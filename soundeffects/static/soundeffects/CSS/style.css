@@ -25,12 +25,21 @@ body {
 
 }
 
-#centerpic {
+#centerpicsearch {
 	background-color: #008ec0;
 	margin: 0px auto 0px auto;
 	width: 960px;
 	height: 500px;
 	text-align: center;
+}
+
+#centerpic {
+	background-color: #008ec0;
+	margin: 0px auto 0px auto;
+	width: 960px;
+	height: auto;
+	text-align: center;
+	padding-bottom: 50px;
 }
 
 #search_form {
@@ -230,5 +239,16 @@ h2 {
    font-weight: 300;
    font-style: normal;
  }
+
+#contact_form {
+	margin-top: 10px;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+#row {
+	padding-top:20px;
+	font-family: 'Gotham Book'; 
+}
 
 

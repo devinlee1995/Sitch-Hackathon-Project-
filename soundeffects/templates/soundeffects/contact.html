@@ -2,7 +2,8 @@
 	{% load staticfiles %}
 	<head> 
 		<title> Sitch </title>
-		<link rel="stylesheet" type="text/css" href="{% static 'soundeffects/CSS/style.css' %}">
+		<link href= "{% static 'soundeffects/CSS/style.css' %}" type= "text/css" 
+		rel= "stylesheet">
 	</head>
 	<body> 
 	<div id= "main">
@@ -27,29 +28,30 @@
 
 		</div>
 
-
-
-	<div id = "centerpic">
-		<p class = "Homepage_Text">I would like to hear...</p>
-	</div>
-		<div id = "search_form"
-
-		<form id="searchthis" action="/search" style="display:inline;" method	="get">
-		<input id="search-box" name="q" size="10" type="text" placeholder	="Music / Jingles / Funny Sounds"/>
-
-		<input id="search-btn" value="Search" type="submit"/>
-		</form>
+<div id = "centerpic">
+	<div id="contact_form"> 
+		<div id="contacttitle">
+		<p><font color="FFFFF" size="5px"> <br/>Questions? Requests? Comments? Send them here!</font></p>
+		<font color="FFFFF">
+			<form id="contact_form" method="POST" action="contact-form-handler.php" >
+		<div id="row">
+			<label id="input">YOUR NAME:</label><br/><br/>
+			<input id="name" class="input" name="name" type="text" value="" size="50" /><br />
 		</div>
-
+		<div id="row">
+			<label id="input">YOUR EMAIL:</label><br/><br/>
+			<input id="email" class="input" name="email" type="email" value="" size="50" /><br/>
+		</div>
+		<div id="row">
+			<label id="input">YOUR MESSAGE:</label><br/></br>
+			<textarea id="message" class="input" name="message" rows="15" cols="50"></textarea><br/>
+		</div>
+		<div id="button">	
+		<input id="submit" type="submit" value="SEND EMAIL" />
+		</form>	
+		</font>	
+		</div>					
 	</div>
-
-
-
-
-		<div id="footer">
-			<div id="footerleft">
-				<p>&#169; Sitch. 2016</p>
-			</div>
 		
 		</div>
 
