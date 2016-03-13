@@ -16,5 +16,5 @@ class SoundEffect(models.Model):
 	tags = models.CharField(max_length=300)
 	sound_file = models.CharField(max_length=100, default='none')
 	category = models.ForeignKey(Categories)
-	def __str__(self):              # __unicode__ on Python 2
-		return self.sound_name
+	# def __str__(self):              # __unicode__ on Python 2
+	# 	return self.sound_name

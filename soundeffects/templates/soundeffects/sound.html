@@ -29,12 +29,6 @@
 
 			</div>
 
-			Here is your sound:
-			
-			<audio controls>
-  				<source src="{% static 'soundeffects/' %}{{sound}}" type="audio/wav">
-			</audio>
-
 			<div id = "centerpic">
 				<p class = "Homepage_Text">I would like to hear...</p>
 			</div>
@@ -45,6 +39,15 @@
 					<input id="search-btn" type="submit" value="Search"/>
 				</form>
 			</div>
+
+			Here is your sound:
+		
+			{% for soundeffect in sound %}
+				<p> {{ soundeffect.sound_name }} </p>
+				<audio controls>
+					<source src="{% static 'soundeffects/' %}{{soundeffect.sound_file}}" type="audio/wav">
+				</audio>
+			{% endfor %}
 
 		</div>
 
